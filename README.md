@@ -38,10 +38,3 @@ To use the game, the following steps are required:
 4. the Letter C, for hold a particular tetromino and then swapping it later in the game when needed.
 5. the letter P for pausing the game.
 6. the ESC key for quitting the game.
-
-### The Core Team
-
-By: ABBAS IBRAHIM
-
-<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
-<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px' /></span>
