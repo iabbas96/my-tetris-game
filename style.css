@@ -1,0 +1,299 @@
+/* defining my css codes with explanation */
+
+/* defining the body style */
+body
+ {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif; 
+    background: white;
+    color: black;
+    min-height: 100vh;
+    align-items: center;
+    padding: 25px;
+    overflow: hidden;
+}
+
+/* defining the main game box area ,where the game is been played */
+.game-box
+{
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+    border: 3px solid #ff0000;
+    max-width: 900px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+/* definig the header style properties */
+.header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 0 15px;
+}
+
+
+/* the general css reset for ensuring consistency across all other elements */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* defining the game details properties */
+.game-detail 
+{
+    text-align: right;
+}
+
+.score-detail 
+{
+    font-size: 1.3em;
+    color: #ff0000;
+    background: rgba(128, 128, 128, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+}
+
+.score-detail div 
+{
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+
+/* defining the game border properties */
+.game-border 
+{
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+/* defining the side panel properties */
+.side-panel 
+{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* the panel shape properties */
+.panel-shape
+{
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color:#ff0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #cccccc;
+}
+
+/* defining the main game properties */
+.main-game 
+{
+    position: relative;
+}
+
+/* defining my tetris canvas properties */
+#my-tetris-canvas
+{
+    border: 4px solid #ffffff;
+    border-radius: 12px;
+    background: #000;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    display: block;
+}
+
+/* defining retain container properties */
+.retain-container
+{
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid #ff0000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+}
+
+
+/* defining upcoming container properties */
+.upcoming-container 
+{
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid ##ff0000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+}
+
+/* defining the retain canvas properties */
+#retain-canvas 
+{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #444;
+    background: #000;
+    border-radius: 2px;
+}
+
+/* defining the upcoming canvas properties */
+#upcoming-canvas 
+{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #444;
+    background: #000;
+    border-radius: 2px;
+}
+
+.controls-detail 
+{
+    background: rgba(255, 255, 255, 0.7);
+    border: 3px solid #00ff00;
+    border-radius: 15px;
+    padding: 20px;
+    color: #000000;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+.controls-detail h1 
+{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.controls-detail div 
+{
+    margin: 8px 0;
+    font-size: 0.95em;
+    padding: 5px;
+    background: rgba(128, 128, 128, 0.1);
+    border-radius: 2px;
+}
+
+.footer 
+{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.75em;
+    color: #000;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.game-over 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 4px solid #ff0000;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+    display: none;
+    z-index: 10;
+}
+
+.game-over div 
+{
+    font-size: 2.5em;
+    color: #ff0000;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px #ff0000;
+    font-weight: bold;
+}
+
+#play-btn 
+{
+    background: linear-gradient(45deg, #ff0080, #ff00ff);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#play-btn:hover 
+{
+    background: linear-gradient(45deg, #ff00ff, #ff0080);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+}
+
+.countdown 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: #00ffff;
+    text-shadow: 0 0 25px #00ffff;
+    display: none;
+    z-index: 5;
+    font-weight: bold;
+}
+
+.paused 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #ffff00;
+    text-shadow: 0 0 15px #ffff00;
+    display: none;
+    z-index: 5;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid #ffff00;
+}
+
+/* making the display to be responsive, for user display */
+@media (max-width: 639px) {
+
+      .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .game-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .side-panel {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+  
+    
+    
+}

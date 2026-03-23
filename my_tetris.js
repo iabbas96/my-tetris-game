@@ -1,0 +1,1 @@
+// the javascript logic has been splitted into three files, namely: tetris _logic.js, renderer.js and controller.js  accordingly to the task requirements.
